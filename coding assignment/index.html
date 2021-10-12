@@ -1,32 +1,14 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Random walk</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-  <div id="area"></div>
-</body>
-<script src="walk.js"></script>
-
-</html>
-
-#area {
-    position: relative;
-    background-color: #f0f0f0;
-    margin: 1em auto;
-  }
-  .ball {
-    background-color: black;
-    position: absolute;
-    display: inline-block;
-    border-radius: 50%;
-  }
-
-const area = {
+    <script>
+        const area = {
     element: document.getElementById('area'),
     width: 600,
     height: 400,
@@ -118,3 +100,6 @@ const area = {
     module.exports = { update, create, changeDirectionIfNecessary, moveTo, area };
 }
 
+    </script>
+</body>
+</html>
